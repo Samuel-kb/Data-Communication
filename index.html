@@ -14,7 +14,7 @@
     }
 
     body {
-      background: #f4f7fb;
+      background: #cee3fd;
       color: #462b2b;
       line-height: 1.6;
     }
@@ -100,12 +100,12 @@
 
     .telegraph img {
       width: 350px;
-      max-width: 100%;
+      max-width: 80%;
       border-radius: 10px;
     }
 
     iframe {
-      width: 100%;
+      width: 80%;
       height: 400px;
       border-radius: 10px;
       border: none;
@@ -119,6 +119,25 @@
       padding: 20px;
       margin-top: 40px;
     }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+ 
+     footer {
 
     ul {
       margin-left: 20px;
@@ -134,6 +153,7 @@
       <a href="#telegraph">Telegraph</a>
       <a href="#inspiration">Inspiration</a>
       <a href="#resources">Resources</a>
+      <a href="#document">Study Guide</a>
     </nav>
   </header>
 
@@ -159,6 +179,17 @@
       </p>
     </div>
   </section>
+
+  <section id="inspiration">
+  <div class="card">
+    <h2>What Inspires Me</h2>
+    <p>
+      I am inspired by how technology connects the world and makes communication faster,
+      easier, and more secure. Learning about networking and cybersecurity motivates me
+      to become a professional who contributes to the development of secure digital systems.
+    </p>
+  </div>
+</section>
 
   <section id="topics">
     <div class="card">
@@ -200,17 +231,22 @@
       </div>
     </div>
   </section>
+  
+  <section id="document">
+  <div class="card">
+    <h2>Embedded Study Guide</h2>
 
-  <section id="inspiration">
-    <div class="card">
-      <h2>What Inspires Me</h2>
-      <p>
-        I am inspired by how technology connects the world and makes communication faster,
-        easier, and more secure. Learning about networking and cybersecurity motivates me
-        to become a professional who contributes to the development of secure digital systems.
-      </p>
-    </div>
-  </section>
+    <p>
+      Below is a copy of my Data Communication study guide document.
+    </p>
+
+    <embed 
+      src="data_com_study%20guide1.pdf" 
+      type="application/pdf" 
+      width="100%" 
+      height="600px">
+  </div>
+</section>
 
   <section id="resources">
     <div class="card">
@@ -239,10 +275,16 @@
 
       <iframe
         src="https://www.youtube.com/embed/qiQR5rTSshw"
-        allowfullscreen>
+        title="Introduction to Data Communication"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy">
       </iframe>
     </div>
   </section>
+
+  </iframe>
+</div>
 
   <footer>
     <p>© 2026 Data Communication Assignment | Designed by SAMUEL BOATENG TIARE</p>
